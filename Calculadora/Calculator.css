@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+form {
+ background-color: white;
+}
+
+.keypad {
+ background-color: white;
+}
+
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.container {
+ top: 50%;
+ left: 50%;
+ position: fixed;
+ transform: translate(-50%, -50%);
+ margin: 0 auto;
+ max-width: 300px !important;
+ max-height: 500px !important;
+ text-align: center;
+ border: 10px solid white;
+ background-color: white;
+ box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.25);
+ border-radius: 5px;
+}
+
+.keypad {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-auto-rows: minmax(60px, 60px);
+ padding-bottom: 15px;
+}
+
+form {
+ padding-top: 15px;
+ padding-bottom: 5px;
+}
+
+input[type="text"]{
+ height: 75px;
+ width: 250px !important;
+ background-color: whitesmoke;
+ border-radius: 5px !important;
+ border: 0px;
+ color: black;
+ padding-right: 5px;
+ padding-top: 5px;
+ text-align: right;
+ font-size: 25px;
+ font-weight: 500;
+ letter-spacing: 1px;
+}
+
+#clear {
+ grid-column: 1/3;
+ grid-row: 1;
+ color: white;
+}
+
+#result {
+ grid-column: 3/5;
+ grid-row: 5;
+}
+
+#backspace {
+ color: #3badcd;
+}
+
+button {
+ margin: 5px;
+ border: none;
+ border-radius: 5px !important;
+ margin: 2px !important;
+ cursor: pointer;
+ background-color: #4ac3e4;
+ color: black;
+ font-weight: 500;
+}
+
+input:focus, input:active, button:focus, button:active{
+ outline: none;
+}
+
+.highlight {
+ background-color: #3badcd;
+ color: white !important;
+}
